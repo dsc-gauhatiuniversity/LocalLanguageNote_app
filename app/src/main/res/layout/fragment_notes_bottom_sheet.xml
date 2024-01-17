@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutBottomSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="#00B8D4"
+    tools:context="com.djd.youniversityNotebook.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/dragup"
+            android:layout_width="77dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_circle_up_24" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/lemonmilkbolditalicpkzp"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="আপোনাৰ ফন্টৰ ৰং নিৰ্বাচন কৰক"
+        android:textAlignment="center"
+        android:textColor="@color/ColorWhite"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticetitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <FrameLayout
+            android:id="@+id/fNote1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_1" />
+
+            <ImageView
+                android:id="@+id/imgNote1"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fNote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_2" />
+
+            <ImageView
+                android:id="@+id/imgNote2"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fNote4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_4" />
+
+            <ImageView
+                android:id="@+id/imgNote4"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_5" />
+
+            <ImageView
+                android:id="@+id/clr2"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clr3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_6" />
+
+            <ImageView
+                android:id="@+id/clr4"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/clr5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/note_color_7" />
+            <ImageView
+                android:id="@+id/clr6"
+                android:layout_width="15dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                app:tint="@color/ColorWhite" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="382dp"
+        android:layout_height="19dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="#00C853"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:layout_width="293dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_image"
+            app:tint="@color/ColorWhite" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="31dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/swanseabolddox"
+            android:maxLines="1"
+            android:text="ছবি যোগ কৰক"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_12ssp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutWebUrl"
+        android:layout_width="383dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="#00C853"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_link"
+            app:tint="@color/ColorWhite" />
+
+        <TextView
+            android:layout_width="284dp"
+            android:layout_height="28dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/swanseabolddox"
+            android:maxLines="1"
+            android:text="লিংকসমূহ যোগ কৰক"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_11ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:src="@drawable/logodesign" />
+
+    <LinearLayout
+        android:id="@+id/layoutDeleteNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/ColorYellowNote"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:tint="@color/ColorWhite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/noticetitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_12ssp"
+            android:text="টোকা মচি পেলাওক"
+            android:fontFamily="@font/swanseaqpd"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

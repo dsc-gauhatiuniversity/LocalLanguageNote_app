@@ -1,0 +1,17 @@
+com/djd/youniversityNotebook/dao/NoteDao_Impl.java
+ com.djd.youniversityNotebook.dao.NoteDao_Impl
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$1
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$10
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$2
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$3
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$4
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$5
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$6
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$7
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$8
+ com.djd.youniversityNotebook.dao.NoteDao_Impl$9
+com/djd/youniversityNotebook/database/NotesDatabase_Impl.java
+ com.djd.youniversityNotebook.database.NotesDatabase_Impl
+ com.djd.youniversityNotebook.database.NotesDatabase_Impl$1
+djd/youniversityNotebook/BuildConfig.java
+ djd.youniversityNotebook.BuildConfig
